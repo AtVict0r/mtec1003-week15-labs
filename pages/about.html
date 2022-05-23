@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="./../js/typewriter.js"></script>
+    <link rel="stylesheet" href="./../css/styles.css">
+    <style>
+        article {
+            width: 90%;
+            margin-top: 5%;
+            margin-left: 5%;
+            padding-bottom: 5%;
+        }
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        article figure img {
+            display: block;
+            width: 40%;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5%;
+            filter: grayscale(100%);
+        }
+
+        /* #3f3c3c */
+
+        article figure figcaption {
+            font-family: Georgia, "Times New Roman", Times, serif; 
+            font: italic bold #292323 ;
+            text-align: center;
+            font-size: 40px;
+            text-decoration: solid;
+        }
+
+        .about p {
+            margin: 2% 5% 0 5%;
+        }
+
+        footer {
+            text-align: left;
+            width: 90%;
+            margin-left: 5%;
+        }
+
+        footer p {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="./../index.html">Home</a>
+        <a href="#">About</a>
+        <a href="./projects.html">Portfolio</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+    <article class="shadow">
+        <figure>
+            <img class="shadow" src="./../images/profile.jpg" alt="Profile picture of David">
+            <figcaption>
+                "I am a friendly professional sports person who is obsessed with selfies"
+            </figcaption>
+        </figure>
+        <div class="about">
+            <h2 onmouseover="typeWriter()">A Little About Me</h2>
+            <p id="paragraph1"></p>
+            <p id="paragraph2"></p>
+            <p id="paragraph3"></p>
+            <p id="paragraph4"></p>
+            <p id="paragraph5"></p>
+        </div>
+    </article>
+    <footer>
+        <p> <strong>The story, name, character, and incident portrayed in this about me are fictitious.</strong> No identification with actual persons (living or deceased), places, buildings, and products is intended or should be inferred. <a href="https://www.character-generator.org.uk/bio/">Source</a></p>
+    </footer>
+</body>
+</html>

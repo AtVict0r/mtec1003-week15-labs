@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./../css/styles.css">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h2, label {
+            color: bisque;
+        }
+
+        /* Full-width input fields */
+        input, select, textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+            resize: vertical;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        textarea {
+            height: 200px;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for all buttons */
+        button {
+            background-color: bisque;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        button:hover {
+            opacity:1;
+        }
+
+        /* Add padding to container elements */
+        .container {
+            border-radius: 5px;
+            width: 90%;
+            margin-left: 5%;
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="./../index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./projects.html">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
+    <form class="shadow container" action="#" method="post">
+        <h2>Contact Me</h2>
+
+        <hr>
+        
+        <label for="first-name"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First Name" name="first-name" required>
+
+        <label for="middle-name"><b>Middle Name</b></label>
+        <input type="text" placeholder="Enter Middle Name" name="middle-name">
+        
+        <label for="last-name"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter Last Name" name="last-name" required>
+
+        <label for="phone-number"><b>Phone Number</b></label>
+        <input type="tel" placeholder="(123)456-7890" name="phone-number">
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="example@email.com" name="email" required>
+
+        <label for="Continent"><b>Continent</b></label>
+        <select name="continent" id="continent">
+            <option value="north-america">North America</option>
+            <option value="south-america">South America</option>
+            <option value="africa">Africa</option>
+            <option value="australia">Australia</option>
+            <option value="antarctica">Antarctica</option>
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea name="message" placeholder="Write something..."></textarea>
+
+        <label for="file"><b>Upload File</b></label>
+        <input type="file" name="file">
+
+        <button type="submit" class="contact" value="submit">Contact</button>
+    </form>
+</body>
+</html>
